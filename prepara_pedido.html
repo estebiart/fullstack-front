@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Document</title>
     
 </head>
@@ -22,12 +23,13 @@
             <br>
             <h2  style="background-color: rgb(248, 198, 124); color: gray;text-align:center; margin:auto; ">Datos del pedido</h2>
             <br><label  >tamaño</label><br>
-            <select name="select" style="margin: 20px;">
-                <option value="value1">pequeña</option>
-                <option value="value2" selected>mediana</option>
-                <option value="value3">grande</option>
-                <option value="value3">XXL</option>
-              </select>
+            <select name="tamano" id="tamano">
+                <option value="XXL">XXL</option>
+                <option value="L">Grande</option>
+                <option value="M">Mediana</option>
+                <option value="S">Pequeña</option>
+                 </select>
+                <span id="resultado_tamano"></span>
               <br>
               <label><input type="checkbox" id="cbox1" value="first_checkbox"> Jamón York</label><br>
 
@@ -42,8 +44,9 @@
             <input type="submit" value="Enviar" style="margin: 20px;">
 
         </form >
-
+ 
   
  
 </body>
+
 </html>
